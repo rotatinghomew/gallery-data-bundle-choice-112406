@@ -1,0 +1,157 @@
+{
+  "tables": {
+    "sku": [
+      "sku",
+      "title",
+      "cents",
+      "required_people",
+      "main",
+      "experience",
+      "exchange"
+    ],
+    "dates": [
+      "run",
+      "day",
+      "kind",
+      "main_limit",
+      "experience_limit",
+      "partition"
+    ],
+    "stock": [
+      "run",
+      "minute",
+      "sku",
+      "shown_available",
+      "status"
+    ],
+    "display": [
+      "run",
+      "minute",
+      "sku",
+      "cents",
+      "ordinal",
+      "randomized_price",
+      "randomized_position",
+      "party_min"
+    ],
+    "shops": [
+      "shop",
+      "run",
+      "at",
+      "channel",
+      "people",
+      "audience",
+      "alias",
+      "engagement"
+    ],
+    "tickets": [
+      "ticket",
+      "shop",
+      "run",
+      "sku",
+      "sold",
+      "state",
+      "rec_min"
+    ],
+    "exchange": [
+      "ticket",
+      "run",
+      "at",
+      "state",
+      "new_sku",
+      "acknowledgement"
+    ],
+    "forward": [
+      "ticket",
+      "run",
+      "channel",
+      "sku",
+      "people",
+      "booked",
+      "state",
+      "chosen_slot",
+      "exchange_until"
+    ],
+    "current_transactions": [
+      "event",
+      "ticket",
+      "run",
+      "minute",
+      "channel",
+      "change",
+      "desired",
+      "state"
+    ],
+    "plans": [
+      "plan",
+      "run",
+      "slot",
+      "main",
+      "experience",
+      "priority",
+      "allow_transfer"
+    ]
+  },
+  "references": [
+    [
+      "dates",
+      "run",
+      "stock",
+      "run"
+    ],
+    [
+      "dates",
+      "run",
+      "display",
+      "run"
+    ],
+    [
+      "dates",
+      "run",
+      "shops",
+      "run"
+    ],
+    [
+      "sku",
+      "sku",
+      "display",
+      "sku"
+    ],
+    [
+      "shops",
+      "shop",
+      "tickets",
+      "shop"
+    ],
+    [
+      "tickets",
+      "ticket",
+      "exchange",
+      "ticket"
+    ],
+    [
+      "sku",
+      "sku",
+      "exchange",
+      "new_sku"
+    ],
+    [
+      "sku",
+      "sku",
+      "forward",
+      "sku"
+    ],
+    [
+      "forward",
+      "ticket",
+      "current_transactions",
+      "ticket"
+    ]
+  ],
+  "agreement_keys": [
+    "clock",
+    "sales",
+    "quotas",
+    "estimate"
+  ]
+}

@@ -1,0 +1,5 @@
+ticket,run,channel,sku,people,booked,state,chosen_slot,exchange_until
+F1,N61,远程,B,2,1,已付,3,18
+F2,N61,现场,M,1,2,已付,3,0
+F3,N61,现场,B1,1,4,待付款,3,18
+F4,N62,现场,B,2,3,换购待确认,4,16

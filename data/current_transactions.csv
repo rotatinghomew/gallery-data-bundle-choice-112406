@@ -1,0 +1,6 @@
+event,ticket,run,minute,channel,change,desired,state
+X1,F1,N61,6,远程,申请改购,M,未确认
+X2,F3,N61,8,远程,取消待付,,已确认
+X3,F3,N61,8,现场,支付回报,B1,待核时序
+X4,F1,N61,10,现场,换购确认,M,已确认
+X5,F4,N62,17,现场,换购期满,K,未确认

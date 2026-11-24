@@ -1,0 +1,32 @@
+{
+  "clock": "minutes 从场次放票开始，时点快照有效到下一记录。rec_min 是本馆得知交易结果的时刻。",
+  "sales": {
+    "choice_id": "shop 代表一次有效购物机会，未选择也是记录",
+    "required_people": "同票可约的最少同行人数",
+    "units": "价格为整数分，括号外人数对应每票的共同资源，若两人进入，资源对两人同时占用",
+    "payment_timeout_min": 4
+  },
+  "quotas": {
+    "reserved_main_fraction": 0.2,
+    "reserved_experience_fraction": 0.15,
+    "held_slots_not_replaceable": true,
+    "min_group_access_probability": 0.7,
+    "reserve_until_min": 12,
+    "new_dates": [
+      "N61",
+      "N62"
+    ]
+  },
+  "estimate": {
+    "train_days": [
+      1,
+      30
+    ],
+    "holdout_days": [
+      31,
+      42
+    ],
+    "minimum_price_history_choices": 8,
+    "include_no_purchase": true
+  }
+}

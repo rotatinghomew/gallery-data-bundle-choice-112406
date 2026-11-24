@@ -1,0 +1,5 @@
+sku,title,cents,required_people,main,experience,exchange
+B,综合双项,14000,2,1,1,可拆
+M,只看主展,8000,1,1,0,不可拆
+K,短线体验,5000,1,0,1,不可拆
+B1,综合单项,10500,1,1,1,可拆
